@@ -6,11 +6,11 @@ Last reviewed: YYYY-MM-DD
 
 ## Confirmed
 
-<!-- Record only statements the founder has personally confirmed. When the founder approves this whole document, change the Status line above to: Status: confirmed -->
+<!-- Record only statements the founder has personally confirmed. Be specific and detailed: capture the founder's own words and concrete examples, not a paraphrase. When the founder approves this whole document, change the Status line above to: Status: confirmed -->
 
 ## Evidence and examples
 
-<!-- Customer observations, references, good/bad examples, metrics, or decisions. -->
+<!-- Concrete specifics: real quotes, observed behavior, numbers, names, references, and good/bad examples — not summaries. -->
 
 ## Hypotheses
 
