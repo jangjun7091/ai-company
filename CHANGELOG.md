@@ -4,6 +4,10 @@ All notable changes to this template are documented here. The format follows [Ke
 
 ## [Unreleased]
 
+### Changed
+
+- The Product Spec is now **agent-drafted then founder-ratified**, not produced by a full interview. `idea-to-release.md` distinguishes the two artifacts: the Idea Brief is *elicited* (its intent lives only in the founder's head), while the Product Spec is *derived* — the agent drafts it from the approved Idea Brief and the founder documents (especially `quality-bar.md`), then the founder ratifies the load-bearing few (acceptance-criteria thresholds, non-goals, human-gate impacts) and the agent asks only where "good" is genuinely underdetermined, never burying a guessed threshold. `AGENTS.md` Feature work and the `product-spec.md` pointer comment updated to match. (#24)
+
 ### Added
 
 - Altitude-and-resolution guard for the Idea Brief / Product Spec interview in `company/workflows/idea-to-release.md`: the interviewer holds each artifact at its altitude (the founder owns intent; the agent owns mechanism), defers implementation detail the founder volunteers to the Spec and Build phases instead of deepening to match, and states the decision-grade resolution it needs so the founder neither over-specifies (anchoring the agent) nor under-specifies (confident-wrong output). Found by running the #20 interview on a real product. (#22)

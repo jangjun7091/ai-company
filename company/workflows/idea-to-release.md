@@ -29,9 +29,14 @@ State updates in `company/state/project-state.yaml`:
 
 No phase may declare itself complete solely through an agent's prose assertion.
 
-## Eliciting the Idea Brief and Product Spec
+## Producing the Idea Brief and Product Spec
 
-The Idea Brief (Decide) and Product Spec (Specify) are produced *through a bounded interview with the founder*, not drafted unilaterally. The founder owns intent and the quality bar; the interviewer's job is to extract that judgment, ground it in a realistic and buildable direction, and converge it into testable criteria.
+The Idea Brief (Decide) and Product Spec (Specify) are the two artifacts the agent builds toward, so the founder's judgment must be in them — but they are produced differently:
+
+- The **Idea Brief is elicited** through a bounded founder interview: its intent, bet, non-goals, and riskiest assumption exist only in the founder's head, so they must be drawn out.
+- The **Product Spec is derived**: the agent drafts it from the approved Idea Brief and the founder documents (especially `quality-bar.md`), then the founder ratifies the load-bearing few. Do not re-interview what the draft can derive.
+
+The founder owns intent and the quality bar; the agent extracts or derives that judgment, grounds it in a realistic and buildable direction, and converges it into testable criteria.
 
 Use the interviewer stance from `bootstrap-interview.md` — probe vague answers, dig for intent, name gaps and contradictions, no flattery — with three additions specific to this stage:
 
@@ -47,12 +52,14 @@ Idea Brief — reach decision-grade answers that satisfy `definition_of_ready` i
 3. What is the smallest slice worth building, and what is explicitly out of scope (non-goals)?
 4. What is the riskiest assumption, and what would falsify it?
 
-Product Spec — converge on:
+Product Spec — the agent drafts from the Idea Brief and founder documents; the founder ratifies. The draft settles, and the founder confirms:
 
-1. Concretely, what can the user see or do that they cannot today (user-visible behavior)?
-2. What must be true to count as done — each stated observably or machine-checkably (acceptance criteria)?
-3. How must it behave on failure and at the edges (failure behavior, invariants)?
-4. What quality bar applies here, and what is explicitly not in this spec (non-goals)?
-5. Any security, privacy, billing, or rollback impact that needs a human gate?
+1. What the user can see or do that they cannot today (user-visible behavior).
+2. What must be true to count as done — each stated observably or machine-checkably (acceptance criteria). Surface any threshold the agent had to choose (for example, a hit-rate bar) for the founder to ratify; never bury a guessed "good".
+3. How it must behave on failure and at the edges (failure behavior, invariants).
+4. The quality bar that applies, and what is explicitly out of this spec (non-goals).
+5. Any security, privacy, billing, or rollback impact that needs a human gate.
 
-Record answers in `templates/idea-brief.md` and `templates/product-spec.md`; both close with the founder's explicit approval.
+The founder need not author these — review and correct the draft, and explicitly confirm 2, 4, and 5. Ask only where the Idea Brief left "good" underdetermined; otherwise derive.
+
+The Idea Brief is recorded in `templates/idea-brief.md` from the interview; the Product Spec is drafted in `templates/product-spec.md` and then ratified. Both close with the founder's explicit approval.
