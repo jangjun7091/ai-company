@@ -58,8 +58,9 @@ Merge when CI is green. When a milestone's issues are all merged, cut a release
 
 1. Move the `[Unreleased]` section of `CHANGELOG.md` under a new
    `[x.y.z] - YYYY-MM-DD` heading.
-2. Bump `version` in `ai-company.yaml` (and agent contract versions if their
-   contracts changed).
+2. Bump `version` in `ai-company.yaml` to the full SemVer `x.y.z` — `0.4.0`,
+   not `0.4` — (and agent contract versions if their contracts changed).
+   Releases before 0.4.0 wrote `X.Y`; normalize when you touch the field.
 3. Commit: `Release vX.Y.Z`.
 4. Tag and publish:
    ```bash
