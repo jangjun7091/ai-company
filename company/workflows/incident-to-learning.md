@@ -15,4 +15,4 @@ State updates:
 
 - Write a `docs/learning/` entry using `templates/learning-entry.md`.
 - Append to `repeated_failures` in `company/state/company-state.yaml` when a failure class repeats.
-- Record the incident itself with `templates/incident.md`.
+- Record the incident itself in `docs/incidents/` using `templates/incident.md`.

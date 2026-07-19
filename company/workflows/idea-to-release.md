@@ -62,7 +62,7 @@ Product Spec — the agent drafts from the Idea Brief and founder documents; the
 
 The founder need not author these — review and correct the draft, and explicitly confirm 2, 4, and 5. Ask only where the Idea Brief left "good" underdetermined; otherwise derive.
 
-The Idea Brief is recorded in `templates/idea-brief.md` from the interview; the Product Spec is drafted in `templates/product-spec.md` and then ratified. Both close with the founder's explicit approval.
+The Idea Brief is recorded from the interview using `templates/idea-brief.md`; the Product Spec is drafted using `templates/product-spec.md` and then ratified. Both live in the mission's folder under `docs/specs/` (see `docs/specs/README.md`) and close with the founder's explicit approval.
 
 ## Executing build tasks
 
