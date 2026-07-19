@@ -18,6 +18,7 @@ All notable changes to this template are documented here. The format follows [Ke
 
 ### Fixed
 
+- The release checklist specifies that the `version` bump in `ai-company.yaml` produces full SemVer (`x.y.z`) — releases so far wrote `X.Y` (`0.3`), leaving the field MAINTAINING calls the SemVer single source of truth in a non-SemVer format. The field itself normalizes at the next release, per the founder's decision; no mid-cycle edit. (#58)
 - The Definition of Ready is satisfiable where it is checked: the Idea Brief covers the brief-level items, `acceptance_criteria_testable` is satisfied by the derived Product Spec, and the full gate passes before Build. Previously both workflow references told the agent the brief alone satisfies a gate whose criteria item is — post-#24 — a Spec artifact. Gate vocabulary unchanged. (#55)
 - The repository map in `README.md` and `README.ko.md` matches the tree: all five workflows (`founder-doc-revision` was missing) and the full `docs/` set (research and incidents were missing). (#53)
 - The resume protocol in `MAINTAINING.md` no longer hardcodes a milestone that goes stale after every release: the issue-list step takes the current milestone from `ROADMAP.md`'s "Next:" heading (it pointed at the already-released v0.3.0, so a resuming session saw zero planned issues). (#51)
