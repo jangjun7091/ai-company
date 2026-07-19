@@ -94,7 +94,7 @@ Writes to: `company/founder/human-escalation-policy.md`
 
 ### 6. First mission
 
-Create an Idea Brief using `templates/idea-brief.md`, stored in the mission's folder under `docs/specs/`, and verify the Definition of Ready in `ai-company.yaml`.
+Create an Idea Brief using `templates/idea-brief.md`, stored in the mission's folder under `docs/specs/`, and verify the brief-level items of the Definition of Ready in `ai-company.yaml` — `acceptance_criteria_testable` is satisfied later by the Product Spec, and the full gate passes before Build.
 
 State updates: `company/state/project-state.yaml` (`stage`, `project_name`, and `current_mission` — the approved Idea Brief's path).
 
