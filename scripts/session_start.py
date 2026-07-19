@@ -80,7 +80,8 @@ def build_result(root: Path = ROOT) -> dict:
             "change its 'Status:' line to 'Status: confirmed'.",
             "Set 'stage:' in company/state/project-state.yaml from "
             f"'uninitialized' to '{NEXT_STAGE_AFTER_BOOTSTRAP}' (the next "
-            "lifecycle stage in ai-company.yaml).",
+            "lifecycle stage in ai-company.yaml), and record 'project_name' "
+            "and 'current_mission' (the approved Idea Brief's path).",
             "Re-run 'python scripts/session_start.py --json' and confirm the "
             "mode is operating_loop.",
         ]

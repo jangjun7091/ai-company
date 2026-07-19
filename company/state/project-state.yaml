@@ -3,7 +3,7 @@
 # in ai-company.yaml.
 stage: uninitialized # bootstrap-interview advances this to discovery; idea-to-release moves it through later stages
 project_name: null # set during the bootstrap interview
-current_mission: null # idea-to-release: approved Idea Brief
+current_mission: null # approved Idea Brief path; first set at bootstrap exit, then by idea-to-release (Decide)
 active_spec: null # idea-to-release: current Product Spec path
 active_decisions: [] # open ADR/decision ids
 blocked_by_human: [] # open human-assistance-request ids
