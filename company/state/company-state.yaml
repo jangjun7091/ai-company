@@ -1,6 +1,9 @@
-portfolio_stage: formation
+# Portfolio-level state, updated by the weekly operating review and the
+# incident-to-learning workflow. `portfolio_stage` must be one of
+# lifecycle.portfolio_stages in ai-company.yaml.
+portfolio_stage: formation # formation | operating | scaling
 active_products: []
-company_priorities: []
-founder_review_queue: []
-capability_gaps: []
-repeated_failures: []
+company_priorities: [] # weekly-operating-review output
+founder_review_queue: [] # items waiting for founder decision
+capability_gaps: [] # weekly-operating-review: repeated agent limitations
+repeated_failures: [] # incident-to-learning: failure classes seen more than once

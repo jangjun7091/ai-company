@@ -1,9 +1,12 @@
-stage: uninitialized
-project_name: null
-current_mission: null
-active_spec: null
-active_decisions: []
-blocked_by_human: []
-last_verified_commit: null
-last_production_release: null
-next_review: null
+# Machine-read by scripts/session_start.py and scripts/doctor.py.
+# Keep flat `key: value` lines; `stage` must be one of lifecycle.stages
+# in ai-company.yaml.
+stage: uninitialized # bootstrap-interview advances this to discovery; idea-to-release moves it through later stages
+project_name: null # set during the bootstrap interview
+current_mission: null # idea-to-release: approved Idea Brief
+active_spec: null # idea-to-release: current Product Spec path
+active_decisions: [] # open ADR/decision ids
+blocked_by_human: [] # open human-assistance-request ids
+last_verified_commit: null # idea-to-release: Verify step
+last_production_release: null # idea-to-release: Release step
+next_review: null # weekly-operating-review: next scheduled review date

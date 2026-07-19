@@ -16,3 +16,8 @@ Outputs:
 - Explicit decisions and dissent.
 - A small set of approved missions.
 - Changes to quality gates, skills, evaluations, or permissions.
+
+State updates:
+
+- `company/state/company-state.yaml`: `company_priorities`, `founder_review_queue`, `capability_gaps`; review and prune `repeated_failures`.
+- `company/state/project-state.yaml`: `next_review`.

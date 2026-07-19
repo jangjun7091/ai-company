@@ -10,3 +10,9 @@
 8. Review whether the failure came from intent, planning, capability, execution, verification, or control.
 9. Update the appropriate system artifact.
 10. Track whether the same failure class decreases.
+
+State updates:
+
+- Write a `docs/learning/` entry using `templates/learning-entry.md`.
+- Append to `repeated_failures` in `company/state/company-state.yaml` when a failure class repeats.
+- Record the incident itself with `templates/incident.md`.

@@ -1,4 +1,4 @@
-version: 0.1
+version: 0.2
 canonical_agent_instructions: AGENTS.md
 
 lifecycle:
@@ -11,6 +11,11 @@ lifecycle:
     - release_candidate
     - production
     - learning
+  # Allowed values for portfolio_stage in company/state/company-state.yaml.
+  portfolio_stages:
+    - formation
+    - operating
+    - scaling
 
 operating_loop:
   - discover
@@ -58,6 +63,9 @@ human_approval_required:
 
 model_policy:
   principle: use_the_lowest_capability_model_that_reliably_passes_the_relevant_evals
+  # Model escalation: when to switch to a stronger model. Distinct from human
+  # escalation, whose vocabulary is the trigger enum in
+  # company/schemas/escalation.schema.json.
   escalation_triggers:
     - repeated_failure
     - conflicting_requirements
