@@ -96,7 +96,7 @@ Writes to: `company/founder/human-escalation-policy.md`
 
 Create an Idea Brief using `templates/idea-brief.md`, stored in the mission's folder under `docs/specs/`, and verify the brief-level items of the Definition of Ready in `ai-company.yaml` — `acceptance_criteria_testable` is satisfied later by the Product Spec, and the full gate passes before Build.
 
-State updates: `company/state/project-state.yaml` (`stage`, `project_name`, and `current_mission` — the approved Idea Brief's path).
+State updates: `company/state/project-state.yaml` (`stage`, `project_name`, `current_mission` — the approved Idea Brief's path — and `next_review`).
 
 ## Exit condition
 
@@ -105,7 +105,7 @@ The workflow exits bootstrap mode only when the founder has corrected and explic
 The exit gate is mechanical. After the founder approves:
 
 1. Change the `Status:` line of each approved founder document to `Status: confirmed`.
-2. Set `stage:` in `company/state/project-state.yaml` from `uninitialized` to `discovery`, and record `project_name` and `current_mission` (the approved Idea Brief's path) — the next session finds the first mission through the state index, not the chat history.
+2. Set `stage:` in `company/state/project-state.yaml` from `uninitialized` to `discovery`, and record `project_name`, `current_mission` (the approved Idea Brief's path), and `next_review` (the first weekly operating review — a week out is a fine default). The next session finds the first mission and the review cadence through the state index, not the chat history.
 3. Re-run `python scripts/session_start.py --json` and confirm the mode is `operating_loop`.
 
 Never mark a document `confirmed` without the founder's explicit approval.
