@@ -1,5 +1,7 @@
 # Product Spec: <name>
 
+<!-- Produced through a bounded founder interview — see company/workflows/idea-to-release.md. -->
+
 ## User and context
 
 ## Problem statement

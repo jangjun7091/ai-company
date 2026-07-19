@@ -1,5 +1,7 @@
 # Idea Brief: <name>
 
+<!-- Produced through a bounded founder interview — see company/workflows/idea-to-release.md. -->
+
 Status: draft
 Owner: Founder
 
