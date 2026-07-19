@@ -8,6 +8,7 @@ All notable changes to this template are documented here. The format follows [Ke
 
 - Bootstrap interview now instructs faithful, detailed capture of founder answers (preserve the founder's own words, examples, numbers, and edge cases) with a per-section read-back check, instead of writing a compressed summary. Founder-doc comments and `AGENTS.md` reinforce that founder docs are the source of truth, not a paraphrase. (#6)
 - Defined a rigorous, non-sycophantic interviewer role for the bootstrap interview (probe vague answers, dig for intent, name gaps, no flattery) with an explicit boundary: the founder owns the vision; the interviewer makes it precise and evidence-separated rather than judging it. `AGENTS.md` adds a general no-flattery behavior. (#8)
+- Numbered the interview sub-questions and added a per-section coverage rule so the interviewer cannot silently skip or merge questions, or drift into its own numbering. Before writing a section it must report per-question coverage (answered / partly / open). (#10)
 
 ## [0.2.0] - 2026-07-19
 

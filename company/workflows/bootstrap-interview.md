@@ -42,46 +42,52 @@ Founder documents are the source of truth, not meeting minutes. Capture faithful
 - **Persist per section, not at the end.** After each section (typically 3–5 questions), write to the target file, then read the written section back to the founder and ask "what did I lose or flatten?" Revise before moving on. Never hold more than one section's answers only in chat.
 - Keep it structured, not a transcript dump: separate confirmed facts, hypotheses, and open decisions — but keep the specifics inside each.
 
+## Covering each section
+
+- Address every numbered question in the section explicitly. Track them against this workflow's numbering — do not invent your own.
+- If one answer already covers part of another question, say so and confirm the remainder explicitly; never silently mark a question answered.
+- Before writing the section, report coverage for each numbered question: answered, partly answered, or still open. A question with no confirmed answer is recorded as a hypothesis or open decision — never skipped.
+
 ## Sections
 
 ### 1. Founder intent
 
-- What change do you want to create in the world or in a customer's work?
-- Why is this problem personally important enough to sustain?
-- What must this company never optimize away?
+1. What change do you want to create in the world or in a customer's work?
+2. Why is this problem personally important enough to sustain?
+3. What must this company never optimize away?
 
 Writes to: `company/founder/vision.md`
 
 ### 2. Customer truth
 
-- Who experiences the problem most acutely?
-- What do they do today?
-- What direct evidence exists: conversations, observations, purchases, workarounds, or usage data?
-- What is still only a hypothesis?
+1. Who experiences the problem most acutely?
+2. What do they do today (the current alternative)?
+3. What direct evidence exists: conversations, observations, purchases, workarounds, or usage data?
+4. What is still only a hypothesis?
 
 Writes to: `company/founder/customer-truth.md`
 
 ### 3. Product principles
 
-- Which trade-offs should agents make consistently?
-- What should be favored: speed, control, editability, safety, accuracy, aesthetics, or cost?
-- What will the product deliberately not do?
+1. Which trade-offs should agents make consistently?
+2. What should be favored: speed, control, editability, safety, accuracy, aesthetics, or cost?
+3. What will the product deliberately not do?
 
 Writes to: `company/founder/product-principles.md`
 
 ### 4. Quality and taste
 
-- Show or describe examples considered excellent and unacceptable.
-- What is the minimum release quality?
-- Which failures destroy trust?
+1. Show or describe examples considered excellent and unacceptable.
+2. What is the minimum release quality?
+3. Which failures destroy trust?
 
 Writes to: `company/founder/quality-bar.md`
 
 ### 5. Human boundaries
 
-- Which decisions require founder judgment?
-- Which tasks can be automated?
-- Which capability limitations should trigger a request for human input?
+1. Which decisions require founder judgment?
+2. Which tasks can be automated?
+3. Which capability limitations should trigger a request for human input?
 
 Writes to: `company/founder/human-escalation-policy.md`
 
