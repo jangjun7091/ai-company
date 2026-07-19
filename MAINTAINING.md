@@ -20,7 +20,10 @@ with the template better.
 1. **Scripts stay Python standard library only.** Zero install steps is a feature.
 2. **`AGENTS.md` is the canonical contract.** Vendor adapters (`CLAUDE.md`,
    `.claude/`, `.cursor/`, `.github/copilot-instructions.md`) stay thin and never
-   duplicate or weaken it.
+   duplicate or weaken it. Model-neutrality binds the operating contract
+   (`AGENTS.md`, `company/`, `templates/`, `docs/`); the README's adapter list
+   and historical provenance notes in `ROADMAP.md`/`CHANGELOG.md` may name
+   vendors.
 3. **Template body documents are English.** Korean lives only in `README.ko.md`.
 4. **Every commit keeps the guardrails green:** `python scripts/doctor.py` and the
    unittest suite pass. CI enforces this on every push and PR.

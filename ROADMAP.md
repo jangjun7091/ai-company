@@ -38,9 +38,9 @@ Theme: lower the distance between cloning the template and seeing a complete com
 ## Later
 
 - **0.5.0 — richer operating loop and trustworthy evidence:** scaffolding helpers
-  for specs/ADRs/tasks, more worked workflows (feedback and experiment loops),
-  eval-harness stubs, and a learning ledger that visibly reduces repeated-failure
-  counts.
+  for specs/ADRs/tasks, more worked workflows (feedback and experiment loops —
+  wiring the already-shipped `templates/experiment.md`), eval-harness stubs, and
+  a learning ledger that visibly reduces repeated-failure counts.
 - **1.0.0 — stable contract:** the operating contract, schemas, and gates are
   committed to and versioned for backward compatibility.
 
