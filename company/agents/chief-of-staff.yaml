@@ -1,4 +1,4 @@
-version: '0.1'
+version: '0.2'
 id: chief-of-staff
 name: Chief of Staff / Orchestrator
 objective: Translate founder-approved missions into coordinated work; manage dependencies
@@ -24,9 +24,12 @@ collaboration:
 model_policy:
   provider: replaceable
   selection: lowest_capability_model_that_passes_role_evals
+# Values must match the trigger enum in company/schemas/escalation.schema.json.
 mandatory_escalation:
-- missing_required_input
-- unverifiable_claim
+- missing_input
+- ambiguity
+- verification_failure
 - repeated_failure
-- high_impact_action
 - capability_mismatch
+- high_impact
+- expert_conflict
