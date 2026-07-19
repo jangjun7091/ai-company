@@ -76,6 +76,24 @@ class DoctorTests(unittest.TestCase):
             f"expected a stage error in {errors}",
         )
 
+    def test_missing_agent_contracts_reported(self) -> None:
+        self.write("ai-company.yaml", MINIMAL_MANIFEST)
+        errors = module.collect_errors(self.root)
+        self.assertTrue(
+            any("no agent role contracts" in error for error in errors),
+            f"expected an agent-contracts error in {errors}",
+        )
+        self.write(
+            "company/agents/product-engineering.yaml",
+            "id: product-engineering\nmandatory_escalation:\n- missing_input\n",
+        )
+        self.assertFalse(
+            any(
+                "no agent role contracts" in error
+                for error in module.collect_errors(self.root)
+            )
+        )
+
     def test_agent_vocab_mismatch_reported(self) -> None:
         self.write("ai-company.yaml", MINIMAL_MANIFEST)
         self.write(

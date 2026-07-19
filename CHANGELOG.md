@@ -20,6 +20,7 @@ All notable changes to this template are documented here. The format follows [Ke
 
 ### Fixed
 
+- `doctor.py` fails when `company/agents/` contains no role contracts: the escalation-vocabulary check silently no-opped on an empty or missing directory, so a repo with zero agent contracts passed although `AGENTS.md` operates through them. Fork-safe — any `*.yaml` satisfies it; the shipped eight are not required by name. Locked by a fixture test. (#57)
 - The first weekly operating review actually gets scheduled: the bootstrap exit gate also sets `next_review` (workflow exit step and state-updates line, `session_start.py` exit-step text, state-file comment). Previously the field's only writer was the weekly review itself, so nothing ever triggered the first one. (#62)
 - The release checklist specifies that the `version` bump in `ai-company.yaml` produces full SemVer (`x.y.z`) — releases so far wrote `X.Y` (`0.3`), leaving the field MAINTAINING calls the SemVer single source of truth in a non-SemVer format. The field itself normalizes at the next release, per the founder's decision; no mid-cycle edit. (#58)
 - The Definition of Ready is satisfiable where it is checked: the Idea Brief covers the brief-level items, `acceptance_criteria_testable` is satisfied by the derived Product Spec, and the full gate passes before Build. Previously both workflow references told the agent the brief alone satisfies a gate whose criteria item is — post-#24 — a Spec artifact. Gate vocabulary unchanged. (#55)

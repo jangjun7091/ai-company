@@ -2,8 +2,9 @@
 """Validate the repository operating contract.
 
 Checks: required contract files exist, schema files parse as JSON, state
-values use the vocabularies defined in ai-company.yaml, and agent contracts
-use the escalation trigger enum from the escalation schema.
+values use the vocabularies defined in ai-company.yaml, at least one agent
+role contract exists, and agent contracts use the escalation trigger enum
+from the escalation schema.
 """
 from __future__ import annotations
 
@@ -139,6 +140,10 @@ def collect_errors(root: Path = ROOT) -> list[str]:
 
     escalation_schema = root / "company" / "schemas" / "escalation.schema.json"
     agents_dir = root / "company" / "agents"
+    # AGENTS.md operates through role contracts; a company with none is
+    # misconfigured, but no specific roster is required (forks rename roles).
+    if not (agents_dir.exists() and any(agents_dir.glob("*.yaml"))):
+        errors.append("company/agents/: no agent role contracts (*.yaml) found")
     if escalation_schema.exists() and agents_dir.exists():
         try:
             allowed = set(
