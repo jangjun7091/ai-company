@@ -51,6 +51,19 @@ class DoctorTests(unittest.TestCase):
     def test_doctor_passes_on_live_repo(self) -> None:
         self.assertEqual(module.collect_errors(REPO_ROOT), [])
 
+    def test_workflow_templates_required(self) -> None:
+        # The templates the workflows build artifacts from must be REQUIRED,
+        # so deleting one fails doctor instead of silently breaking a step.
+        errors = module.collect_errors(self.root)
+        for relative in (
+            "templates/idea-brief.md",
+            "templates/product-spec.md",
+            "templates/adr.md",
+            "templates/incident.md",
+            "templates/research-note.md",
+        ):
+            self.assertIn(f"missing: {relative}", errors)
+
     def test_invalid_stage_reported(self) -> None:
         self.write("ai-company.yaml", MINIMAL_MANIFEST)
         self.write(
