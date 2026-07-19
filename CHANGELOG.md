@@ -8,6 +8,8 @@ All notable changes to this template are documented here. The format follows [Ke
 
 - The Product Spec is now **agent-drafted then founder-ratified**, not produced by a full interview. `idea-to-release.md` distinguishes the two artifacts: the Idea Brief is *elicited* (its intent lives only in the founder's head), while the Product Spec is *derived* — the agent drafts it from the approved Idea Brief and the founder documents (especially `quality-bar.md`), then the founder ratifies the load-bearing few (acceptance-criteria thresholds, non-goals, human-gate impacts) and the agent asks only where "good" is genuinely underdetermined, never burying a guessed threshold. `AGENTS.md` Feature work and the `product-spec.md` pointer comment updated to match. (#24)
 
+- Two audit decisions are recorded in the maintainer docs: model-neutrality binds the operating contract (`AGENTS.md`, `company/`, `templates/`, `docs/`) while the README adapter list and historical provenance notes may name vendors (`MAINTAINING.md` invariant 2); and `templates/experiment.md` stays deliberately unwired until the 0.5.0 experiment loops (`ROADMAP.md`). (#60)
+
 ### Added
 
 - "Executing build tasks" discipline in `company/workflows/idea-to-release.md` for delegating build work to workers (a subagent or any external CLI that reads `AGENTS.md`): one task with tight scope, isolate per branch/worktree, least privilege (read-only for review, write only for implementation, no sandbox bypass outside a disposable runner), verify-before-merge (a worker's self-report is not evidence), and keep the human gates for irreversible or outward-facing actions. Model-neutral by design — no vendor named. (#27)
