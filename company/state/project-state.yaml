@@ -9,4 +9,4 @@ active_decisions: [] # open ADR ids (see docs/decisions/README.md)
 blocked_by_human: [] # task ids blocked on an open human-assistance request
 last_verified_commit: null # idea-to-release: Verify step
 last_production_release: null # idea-to-release: Release step
-next_review: null # weekly-operating-review: next scheduled review date
+next_review: null # next review date; first set at bootstrap exit, then by weekly-operating-review
