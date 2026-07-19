@@ -6,6 +6,7 @@ All notable changes to this template are documented here. The format follows [Ke
 
 ### Added
 
+- `AGENTS.md` **Context discipline** section: an affordance-style guide to loading context — state files as the index, `current_mission` / `active_spec` pointers for the current step, load-on-demand as the default, prefer fetching over guessing, and escalate rather than read everything to infer a missing decision. Framed explicitly as affordances and defaults, not a fixed read-list, so it orients a strong orchestrator instead of caging it while giving a smaller sub-agent a floor. (#18)
 - `company/workflows/founder-doc-revision.md`: how to revise confirmed founder documents — everyday evolution by moving items between sections, substantive changes recorded as ADRs, with the weekly operating review as the cadence and a no-silent-change rule. Referenced from `AGENTS.md` and `weekly-operating-review.md`. (#16)
 
 ## [0.3.0] - 2026-07-19
