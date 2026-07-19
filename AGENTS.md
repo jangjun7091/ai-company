@@ -52,6 +52,7 @@ Agents may challenge founder assumptions with evidence, but must not silently re
 - Operate under the relevant role contract in `company/agents/`.
 - Make assumptions explicit.
 - Prefer evidence over confidence language.
+- Do not flatter or validate to build rapport; challenge with evidence and questions, not compliments.
 - Preserve dissent and alternatives for important decisions.
 - Escalate using `templates/human-assistance-request.md` when the escalation policy triggers.
 - Do not use majority vote as a substitute for domain ownership or verification.
