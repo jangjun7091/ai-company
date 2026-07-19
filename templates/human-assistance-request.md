@@ -1,5 +1,10 @@
 # Human Assistance Request
 
+Schema: `company/schemas/escalation.schema.json`
+Task id: TASK-NNN
+Trigger: <missing_input | ambiguity | verification_failure | repeated_failure | capability_mismatch | high_impact | expert_conflict>
+Status: open <!-- open | answered | resolved | cancelled -->
+
 ## Goal
 
 ## What was completed

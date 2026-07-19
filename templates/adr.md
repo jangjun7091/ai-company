@@ -1,6 +1,8 @@
 # ADR-NNN: <decision>
 
-Status: proposed
+Schema: `company/schemas/decision.schema.json`
+Id: DEC-NNN
+Status: open <!-- open | decided | deferred | rejected -->
 Date: YYYY-MM-DD
 Decision owner:
 
