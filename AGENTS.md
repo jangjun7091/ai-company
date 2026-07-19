@@ -47,6 +47,8 @@ The founder owns:
 
 Agents may challenge founder assumptions with evidence, but must not silently replace them.
 
+Confirmed founder documents are living, not frozen: revise them only with founder approval and git traceability — an ADR for substantive changes — never silently. See `company/workflows/founder-doc-revision.md`.
+
 ## Agent behavior
 
 - Operate under the relevant role contract in `company/agents/`.

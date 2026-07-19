@@ -8,6 +8,7 @@ Review only decision-relevant information:
 - Founder decisions waiting for input.
 - Repeated agent failures and capability gaps.
 - Experiments completed, invalidated hypotheses, and next priorities.
+- Whether new evidence should revise any founder document (see `company/workflows/founder-doc-revision.md`).
 - Work that should be stopped, simplified, automated, or escalated to a human specialist.
 
 Outputs:

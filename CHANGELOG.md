@@ -4,6 +4,10 @@ All notable changes to this template are documented here. The format follows [Ke
 
 ## [Unreleased]
 
+### Added
+
+- `company/workflows/founder-doc-revision.md`: how to revise confirmed founder documents — everyday evolution by moving items between sections, substantive changes recorded as ADRs, with the weekly operating review as the cadence and a no-silent-change rule. Referenced from `AGENTS.md` and `weekly-operating-review.md`. (#16)
+
 ## [0.3.0] - 2026-07-19
 
 ### Added

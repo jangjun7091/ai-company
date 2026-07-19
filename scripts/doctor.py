@@ -29,6 +29,7 @@ REQUIRED = [
     "company/workflows/idea-to-release.md",
     "company/workflows/incident-to-learning.md",
     "company/workflows/weekly-operating-review.md",
+    "company/workflows/founder-doc-revision.md",
     "company/state/project-state.yaml",
     "company/state/company-state.yaml",
     "company/schemas/task.schema.json",
