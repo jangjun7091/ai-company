@@ -63,3 +63,13 @@ Product Spec — the agent drafts from the Idea Brief and founder documents; the
 The founder need not author these — review and correct the draft, and explicitly confirm 2, 4, and 5. Ask only where the Idea Brief left "good" underdetermined; otherwise derive.
 
 The Idea Brief is recorded in `templates/idea-brief.md` from the interview; the Product Spec is drafted in `templates/product-spec.md` and then ratified. Both close with the founder's explicit approval.
+
+## Executing build tasks
+
+Build tasks may be delegated to workers — any agent that reads `AGENTS.md`, whether a subagent or an external CLI. One orchestrator owns the plan and the task split; workers execute scoped tasks. Keep delegation safe and verifiable:
+
+- **One task, tight scope.** Hand a worker a single task file with explicit allowed and forbidden scope, not a whole feature. A headless worker cannot be steered mid-run, so the scope is the control.
+- **Isolate the work.** Each worker runs on its own branch or worktree, so parallel runs cannot collide and every change is reversible.
+- **Least privilege.** Grant the minimum access the task needs — read-only for review or verification, write only for implementation. Do not disable the sandbox except inside a disposable, isolated runner.
+- **Verify before merge.** The orchestrator re-runs the repository checks and the acceptance criteria against the worker's diff before merging. A worker's own success report is not evidence.
+- **Keep the human gates.** Irreversible or outward-facing actions (production, publishing, external spend at scale, credential or access expansion) stay at the human gate even when workers otherwise run unattended.
