@@ -1,10 +1,14 @@
 # ADR-NNN: <decision>
 
 Schema: `company/schemas/decision.schema.json`
-Id: DEC-NNN
+Id: ADR-NNN
 Status: open <!-- open | decided | deferred | rejected -->
 Date: YYYY-MM-DD
 Decision owner:
+
+## Question
+
+<!-- The single decision question this record answers. -->
 
 ## Context
 
