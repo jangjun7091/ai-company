@@ -18,6 +18,7 @@ All notable changes to this template are documented here. The format follows [Ke
 
 ### Fixed
 
+- The bootstrap exit gate records `current_mission` (the approved first Idea Brief's path) alongside `stage` and `project_name` — in the workflow's section-6 state updates and exit step 2, the `session_start.py` exit-step text, and the `project-state.yaml` field comment. Previously the brief was approved during bootstrap but nothing pointed at it, so the next session's state index (`AGENTS.md` Context discipline) lost the first mission. The mechanical gate itself is unchanged. (#33)
 - `idea-to-release.md` no longer describes acceptance criteria as an interview product: the Idea Brief interview elicits the concrete quality bar, and the derived Spec restates it as observable or machine-checkable criteria — matching the drafted-then-ratified model. The interviewer stance is scoped to the brief interview plus the Spec's ratification questions, and founder-volunteered implementation detail is parked in `docs/decisions/` (status `deferred`), the convention `bootstrap-interview.md` already uses. (#31)
 
 ## [0.3.0] - 2026-07-19
