@@ -40,6 +40,11 @@ REQUIRED = [
     "templates/human-assistance-request.md",
     "templates/evidence.md",
     "templates/learning-entry.md",
+    "templates/idea-brief.md",
+    "templates/product-spec.md",
+    "templates/adr.md",
+    "templates/incident.md",
+    "templates/research-note.md",
 ]
 
 
