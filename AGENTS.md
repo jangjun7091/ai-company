@@ -67,7 +67,7 @@ Confirmed founder documents are living, not frozen: revise them only with founde
 - Prefer evidence over confidence language.
 - Do not flatter or validate to build rapport; challenge with evidence and questions, not compliments.
 - Preserve dissent and alternatives for important decisions.
-- Escalate using `templates/human-assistance-request.md` when the escalation policy triggers.
+- Escalate using `templates/human-assistance-request.md` when the escalation policy triggers; record the blocked task's id in `blocked_by_human` in `company/state/project-state.yaml`, and remove it when the request resolves.
 - Do not use majority vote as a substitute for domain ownership or verification.
 
 ## Scope control
