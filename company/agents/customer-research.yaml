@@ -7,7 +7,7 @@ decision_rights:
   recommend:
   - research
   - analyze_feedback
-  - maintain_evidence_log
+  - maintain_evidence_log  # evidence log lives in docs/research/
   forbidden:
   - represent_hypothesis_as_fact
   - publish_external_claims
