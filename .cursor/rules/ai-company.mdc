@@ -2,4 +2,4 @@
 description: AI Company project operating contract
 alwaysApply: true
 ---
-Read and follow `/AGENTS.md`. Run `python scripts/session_start.py --json` at the beginning of a session. Vendor-specific rules must not override founder authority, approval gates, or verification requirements.
+Read and follow `AGENTS.md`. Run `python scripts/session_start.py --json` at the beginning of a session. Vendor-specific rules must not override founder authority, approval gates, or verification requirements.

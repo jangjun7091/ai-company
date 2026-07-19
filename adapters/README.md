@@ -11,6 +11,8 @@ Adapters should only:
 
 Adapters must not duplicate or weaken founder authority, permissions, escalation triggers, or verification gates.
 
+Adapter files live at each tool's native location (`AGENTS.md`, `CLAUDE.md`, `.claude/`, `.github/copilot-instructions.md`, `.cursor/`); this folder only documents the pattern.
+
 Included examples:
 
 - Codex: reads `AGENTS.md` directly.
