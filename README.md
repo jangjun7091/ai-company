@@ -77,11 +77,11 @@ Only the founder's explicit approval justifies marking a document confirmed.
 - `ai-company.yaml` — operating manifest, gates, and vocabularies.
 - `company/founder/` — founder-owned source of truth (five documents).
 - `company/agents/` — role contracts independent of any LLM.
-- `company/workflows/` — bootstrap interview, idea-to-release, incident-to-learning, weekly review.
+- `company/workflows/` — bootstrap interview, idea-to-release, founder-doc-revision, incident-to-learning, weekly review.
 - `company/schemas/` — typed handoff contracts (task, decision, escalation, evidence).
 - `company/state/` — current lifecycle state, machine-read at session start.
 - `templates/` — reusable artifacts wired to the schemas.
-- `docs/` — specs, decisions, runbooks, and the learning ledger.
+- `docs/` — specs, decisions, research, incidents, runbooks, and the learning ledger.
 - `scripts/` — deterministic checks (`doctor.py`, `session_start.py`).
 - `adapters/`, `CLAUDE.md`, `.claude/`, `.github/`, `.cursor/` — thin compatibility layers.
 

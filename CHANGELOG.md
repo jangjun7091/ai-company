@@ -18,6 +18,7 @@ All notable changes to this template are documented here. The format follows [Ke
 
 ### Fixed
 
+- The repository map in `README.md` and `README.ko.md` matches the tree: all five workflows (`founder-doc-revision` was missing) and the full `docs/` set (research and incidents were missing). (#53)
 - The resume protocol in `MAINTAINING.md` no longer hardcodes a milestone that goes stale after every release: the issue-list step takes the current milestone from `ROADMAP.md`'s "Next:" heading (it pointed at the already-released v0.3.0, so a resuming session saw zero planned issues). (#51)
 - `session_start.py`'s operating-mode instruction matches the #18 Context discipline — start from the state-file index and load what the current step needs — instead of the fixed read-list ("Read current specs, decisions, review queues, and evidence") that predates it. (#49)
 - The worker-delegation topology in `idea-to-release.md` reads as defaults, not mandates: a single task file per worker and per-worker branch/worktree isolation are the stated defaults with their override criteria, matching the contract's affordances-and-defaults posture. The safety bullets — least privilege and no sandbox bypass, verify-before-merge, human gates — stay firm. (#47)
