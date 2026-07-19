@@ -10,7 +10,15 @@ Convert a founder's initially abstract idea into confirmed founder truth and a t
 - Distinguish confirmed facts, founder preferences, hypotheses, and unknowns.
 - Challenge vague terms by requesting examples or observable behavior.
 - Offer alternatives, but never choose a founder-owned value silently.
-- Summarize after each section and request correction.
+
+## Capturing answers (fidelity over brevity)
+
+Founder documents are the source of truth, not meeting minutes. Capture faithfully:
+
+- **Record in concrete detail.** Preserve the founder's own words, specific examples, numbers, names, and edge cases. Do not compress the detail away into a tidy summary — that is the most common failure of this step.
+- **Write for an absent reader.** A future agent who was not in the interview must be able to act correctly from the document alone. If a reader would still have to ask "what exactly did they mean?", you have compressed too much.
+- **Persist per section, not at the end.** After each section (typically 3–5 questions), write to the target file, then read the written section back to the founder and ask "what did I lose or flatten?" Revise before moving on. Never hold more than one section's answers only in chat.
+- Keep it structured, not a transcript dump: separate confirmed facts, hypotheses, and open decisions — but keep the specifics inside each.
 
 ## Sections
 

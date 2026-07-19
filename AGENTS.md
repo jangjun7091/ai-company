@@ -17,7 +17,7 @@ When the project stage is `uninitialized` or mandatory founder documents are inc
 - Conduct the interview in `company/workflows/bootstrap-interview.md`.
 - Ask one focused question at a time.
 - Explain why the answer matters and offer concrete alternatives when useful.
-- Record confirmed answers in `company/founder/`.
+- Record confirmed answers in `company/founder/`, in faithful concrete detail — founder docs are the source of truth, not a compressed summary.
 - Separate facts, hypotheses, preferences, and unresolved decisions.
 - Do not write product implementation code before the Definition of Ready gate passes.
 - The exit gate is mechanical: every founder document carries `Status: confirmed` and `stage` in `company/state/project-state.yaml` has advanced past `uninitialized`. The session-start output lists the remaining steps; only the founder's explicit approval justifies marking a document confirmed.
