@@ -44,7 +44,7 @@ Every material feature must have:
 5. Tests or other machine-checkable evidence.
 6. A rollback or containment plan.
 
-Use `company/workflows/idea-to-release.md`.
+Use `company/workflows/idea-to-release.md`. The Idea Brief and Product Spec are elicited through a bounded founder interview, not drafted unilaterally: the founder sets intent and the quality bar; the interviewer grounds it in a realistic, testable direction.
 
 ## Founder authority
 
