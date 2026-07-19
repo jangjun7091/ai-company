@@ -10,9 +10,9 @@ The canonical operating loop is the eight-step loop in `ai-company.yaml`
 4. **Plan** — identify architecture impact, alternatives, dependencies, and rollback.
 5. **Task** — split into minimal vertical slices with explicit allowed scope.
 6. **Build** — work on isolated branches or worktrees; preserve traceable artifacts.
-7. **Verify** — independent checks against acceptance criteria and regression suite.
+7. **Verify** — independent checks against acceptance criteria and regression suite; the `definition_of_done` in `ai-company.yaml` is the completion bar.
 8. **Release** — use feature flags, staged rollout, or another containment mechanism when relevant.
-9. **Observe** — collect product, reliability, cost, and customer signals.
+9. **Observe** — collect product, reliability, cost, and customer signals; route failures and user-impacting anomalies into `incident-to-learning.md`.
 10. **Learn** — convert evidence into decisions, tests, skills, runbooks, or rejected hypotheses.
 
 State updates in `company/state/project-state.yaml`:
@@ -26,6 +26,8 @@ State updates in `company/state/project-state.yaml`:
 | Verify | `stage: verification`, `last_verified_commit` |
 | Release | `stage: release_candidate` then `production`, `last_production_release` |
 | Learn | `stage: learning`, plus an entry in `docs/learning/` using `templates/learning-entry.md` |
+
+Learn closes the mission; the next mission re-enters the loop at Discover, returning `stage` to `discovery`.
 
 No phase may declare itself complete solely through an agent's prose assertion.
 
