@@ -18,9 +18,13 @@ current version is the `version` field in `ai-company.yaml`.
 - **0.1.0** — initial template (generated with GPT-5.6).
 - **0.2.0** — reliable bootstrap exit gate, fixture-based tests, unified escalation
   vocabulary, real contract validation in `doctor.py`, schema-wired templates,
-  state wiring, public-repo docs, Korean README. See `CHANGELOG.md`.
+  state wiring, public-repo docs, Korean README.
+- **0.3.0** — dogfooding hardening of the bootstrap interview (faithful detailed
+  capture, a rigorous non-sycophantic interviewer, numbered questions with
+  per-section coverage, founder-altitude discipline) and a home for research
+  (`docs/research/`, `templates/research-note.md`). See `CHANGELOG.md`.
 
-## Next: 0.3.0 — "prove it works end to end"
+## Next: 0.4.0 — "prove it works end to end"
 
 Theme: lower the distance between cloning the template and seeing a complete company.
 
@@ -29,18 +33,19 @@ Theme: lower the distance between cloning the template and seeing a complete com
 - Validate real artifact instances against the JSON schemas (stdlib-only).
 - A maintainer/session orientation helper, mirroring `session_start.py`.
 - A Windows check script (no GNU Make required).
+- A 60-second quickstart recording in the README.
 
 ## Later
 
-- **0.4.0 — richer operating loop:** scaffolding helpers for specs/ADRs/tasks,
-  more worked workflows (feedback loop, experiment loop), observability hooks.
-- **0.5.0 — evidence you can trust:** eval harness stubs, acceptance-test patterns,
-  a learning-ledger that visibly reduces repeated-failure counts.
+- **0.5.0 — richer operating loop and trustworthy evidence:** scaffolding helpers
+  for specs/ADRs/tasks, more worked workflows (feedback and experiment loops),
+  eval-harness stubs, and a learning ledger that visibly reduces repeated-failure
+  counts.
 - **1.0.0 — stable contract:** the operating contract, schemas, and gates are
   committed to and versioned for backward compatibility.
 
 ## A note on version numbers
 
 If you prefer product-style numbers (v2.1, v3.0, …), map them onto this SemVer
-track — but a project honestly at `0.2` should grow through `0.3 → 1.0` rather than
+track — but a project honestly at `0.3` should grow through `0.4 → 1.0` rather than
 jump to `2.x`. Big themes become minor/major bumps; small fixes become patch bumps.

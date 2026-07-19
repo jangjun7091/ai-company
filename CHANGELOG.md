@@ -4,6 +4,8 @@ All notable changes to this template are documented here. The format follows [Ke
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-07-19
+
 ### Added
 
 - `docs/research/` and `templates/research-note.md`: a home for market, competitive, literature, and domain research, and the location for the Customer & Market Research agent's evidence log — kept separate from founder truth, which holds only the confirmed distillation. (#14)
