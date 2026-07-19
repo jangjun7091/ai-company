@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Human Escalation",
+  "type": "object",
+  "required": ["task_id", "trigger", "goal", "evidence", "minimal_human_input", "status"],
+  "properties": {
+    "task_id": {"type": "string"},
+    "trigger": {"enum": ["missing_input", "ambiguity", "verification_failure", "repeated_failure", "capability_mismatch", "high_impact", "expert_conflict"]},
+    "goal": {"type": "string"},
+    "completed_work": {"type": "array", "items": {"type": "string"}},
+    "evidence": {"type": "array", "items": {"type": "string"}},
+    "options": {"type": "array", "items": {"type": "object"}},
+    "minimal_human_input": {"type": "string"},
+    "next_action_after_response": {"type": "string"},
+    "status": {"enum": ["open", "answered", "resolved", "cancelled"]}
+  },
+  "additionalProperties": false
+}

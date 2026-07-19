@@ -1,0 +1,34 @@
+name: Product idea or feature
+description: Propose a customer problem before implementation
+title: "[Idea] "
+body:
+  - type: textarea
+    id: user
+    attributes:
+      label: Target user and context
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Observed problem and evidence
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+    validations:
+      required: true
+  - type: textarea
+    id: non_goals
+    attributes:
+      label: Non-goals
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: Testable success signal
+    validations:
+      required: true

@@ -1,0 +1,9 @@
+stage: uninitialized
+project_name: null
+current_mission: null
+active_spec: null
+active_decisions: []
+blocked_by_human: []
+last_verified_commit: null
+last_production_release: null
+next_review: null

@@ -1,0 +1,1 @@
+Use `AGENTS.md` as the canonical operating contract. Run `python scripts/session_start.py --json` before material work. Do not implement product code until the repository passes the Definition of Ready gate.

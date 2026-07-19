@@ -1,0 +1,66 @@
+version: 0.1
+canonical_agent_instructions: AGENTS.md
+
+lifecycle:
+  stages:
+    - uninitialized
+    - discovery
+    - definition
+    - build
+    - verification
+    - release_candidate
+    - production
+    - learning
+
+operating_loop:
+  - discover
+  - decide
+  - specify
+  - build
+  - verify
+  - release
+  - observe
+  - learn
+
+founder_owned_documents:
+  - company/founder/vision.md
+  - company/founder/customer-truth.md
+  - company/founder/product-principles.md
+  - company/founder/quality-bar.md
+  - company/founder/human-escalation-policy.md
+
+definition_of_ready:
+  required:
+    - target_user_defined
+    - problem_evidence_recorded
+    - desired_outcome_defined
+    - non_goals_defined
+    - acceptance_criteria_testable
+    - key_risks_identified
+    - founder_approval_recorded
+
+definition_of_done:
+  required:
+    - acceptance_evidence_present
+    - regression_checks_pass
+    - architecture_docs_updated_if_needed
+    - observability_defined
+    - rollback_or_containment_defined
+    - founder_gate_passed_if_required
+
+human_approval_required:
+  - production_deploy
+  - destructive_data_change
+  - billing_or_pricing_change
+  - security_or_privacy_policy_change
+  - external_customer_commitment
+  - legal_or_regulatory_commitment
+
+model_policy:
+  principle: use_the_lowest_capability_model_that_reliably_passes_the_relevant_evals
+  escalation_triggers:
+    - repeated_failure
+    - conflicting_requirements
+    - cross_module_architecture_decision
+    - unverifiable_output
+    - high_impact_decision

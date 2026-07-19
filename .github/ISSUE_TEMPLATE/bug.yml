@@ -1,0 +1,28 @@
+name: Production or product defect
+description: Record reproducible evidence and user impact
+title: "[Bug] "
+body:
+  - type: textarea
+    id: impact
+    attributes:
+      label: User impact
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps and inputs
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs, traces, screenshots, metrics, or artifacts
+    validations:
+      required: true

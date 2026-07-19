@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Decision Record",
+  "type": "object",
+  "required": ["id", "question", "owner", "options", "status"],
+  "properties": {
+    "id": {"type": "string"},
+    "question": {"type": "string"},
+    "owner": {"type": "string"},
+    "options": {"type": "array", "minItems": 2, "items": {"type": "object"}},
+    "evidence": {"type": "array", "items": {"type": "string"}},
+    "dissent": {"type": "array", "items": {"type": "string"}},
+    "selected_option": {"type": ["string", "null"]},
+    "revisit_triggers": {"type": "array", "items": {"type": "string"}},
+    "status": {"enum": ["open", "decided", "deferred", "rejected"]}
+  },
+  "additionalProperties": false
+}

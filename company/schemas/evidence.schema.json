@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Completion Evidence",
+  "type": "object",
+  "required": ["claim", "artifacts", "result"],
+  "properties": {
+    "claim": {"type": "string"},
+    "artifacts": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "commands": {"type": "array", "items": {"type": "string"}},
+    "metrics": {"type": "object"},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "result": {"enum": ["pass", "fail", "inconclusive"]}
+  },
+  "additionalProperties": false
+}
