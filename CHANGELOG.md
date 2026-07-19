@@ -4,6 +4,10 @@ All notable changes to this template are documented here. The format follows [Ke
 
 ## [Unreleased]
 
+### Added
+
+- `docs/research/` and `templates/research-note.md`: a home for market, competitive, literature, and domain research, and the location for the Customer & Market Research agent's evidence log — kept separate from founder truth, which holds only the confirmed distillation. (#14)
+
 ### Changed
 
 - Bootstrap interview now instructs faithful, detailed capture of founder answers (preserve the founder's own words, examples, numbers, and edge cases) with a per-section read-back check, instead of writing a compressed summary. Founder-doc comments and `AGENTS.md` reinforce that founder docs are the source of truth, not a paraphrase. (#6)
