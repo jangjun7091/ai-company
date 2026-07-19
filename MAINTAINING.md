@@ -38,8 +38,8 @@ Run these to reconstruct context, then work one issue at a time:
 git log --oneline -15
 cat ROADMAP.md
 
-# 2. What is planned next (the current milestone)
-gh issue list --repo jangjun7091/ai-company --milestone "v0.3.0"
+# 2. What is planned next — the current milestone is ROADMAP.md's "Next:" heading
+gh issue list --repo jangjun7091/ai-company --milestone "<current milestone, e.g. the ROADMAP Next version>"
 
 # 3. Pick the top unblocked issue, then:
 git switch -c feat/<short-slug>          # one issue per branch, one behavior per change
