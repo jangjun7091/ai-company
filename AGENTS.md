@@ -20,6 +20,7 @@ When the project stage is `uninitialized` or mandatory founder documents are inc
 - Record confirmed answers in `company/founder/`.
 - Separate facts, hypotheses, preferences, and unresolved decisions.
 - Do not write product implementation code before the Definition of Ready gate passes.
+- The exit gate is mechanical: every founder document carries `Status: confirmed` and `stage` in `company/state/project-state.yaml` has advanced past `uninitialized`. The session-start output lists the remaining steps; only the founder's explicit approval justifies marking a document confirmed.
 
 ## Feature work
 
@@ -67,6 +68,7 @@ Default task budget:
 
 ## Verification
 
+- Run `python scripts/doctor.py` after changing contract files (manifest, schemas, agent contracts, state).
 - Run the repository's documented format, lint, type, unit, integration, and relevant domain checks.
 - A claim of completion must cite evidence: test output, artifact, trace, screenshot, metric, or reviewed decision.
 - A failing test may not be deleted or weakened merely to make a change pass.

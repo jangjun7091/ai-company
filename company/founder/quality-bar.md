@@ -6,7 +6,7 @@ Last reviewed: YYYY-MM-DD
 
 ## Confirmed
 
-<!-- Statements personally confirmed by the founder. -->
+<!-- Record only statements the founder has personally confirmed. When the founder approves this whole document, change the Status line above to: Status: confirmed -->
 
 ## Evidence and examples
 

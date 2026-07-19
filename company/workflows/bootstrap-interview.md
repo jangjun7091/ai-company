@@ -59,6 +59,16 @@ Writes to: `company/founder/human-escalation-policy.md`
 
 Create an Idea Brief using `templates/idea-brief.md` and verify the Definition of Ready in `ai-company.yaml`.
 
+State updates: `company/state/project-state.yaml` (`stage`, `project_name`).
+
 ## Exit condition
 
 The workflow exits bootstrap mode only when the founder has corrected and explicitly approved the five founder documents and the first Idea Brief.
+
+The exit gate is mechanical. After the founder approves:
+
+1. Change the `Status:` line of each approved founder document to `Status: confirmed`.
+2. Set `stage:` in `company/state/project-state.yaml` from `uninitialized` to `discovery`, and record `project_name`.
+3. Re-run `python scripts/session_start.py --json` and confirm the mode is `operating_loop`.
+
+Never mark a document `confirmed` without the founder's explicit approval.
