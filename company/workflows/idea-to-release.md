@@ -38,7 +38,7 @@ The Idea Brief (Decide) and Product Spec (Specify) are the two artifacts the age
 
 The founder owns intent and the quality bar; the agent extracts or derives that judgment, grounds it in a realistic and buildable direction, and converges it into testable criteria.
 
-Use the interviewer stance from `bootstrap-interview.md` — probe vague answers, dig for intent, name gaps and contradictions, no flattery — with three additions specific to this stage:
+Use the interviewer stance from `bootstrap-interview.md` — probe vague answers, dig for intent, name gaps and contradictions, no flattery — with these additions specific to this stage:
 
 - **Ground ambition in feasibility.** The founder advances and raises the idea; you convert that into the smallest buildable slice — surface constraints, cost, and what is technically load-bearing. Advance the idea *and* make it real.
 - **Turn "good" into something checkable.** Help the founder set a high, concrete quality bar for this mission, then restate every "good" as an observable or machine-checkable acceptance criterion. Ambition in, testable criteria out — this is the steering wheel the agent builds toward.
