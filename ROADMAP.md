@@ -23,8 +23,15 @@ current version is the `version` field in `ai-company.yaml`.
   capture, a rigorous non-sycophantic interviewer, numbered questions with
   per-section coverage, founder-altitude discipline) and a home for research
   (`docs/research/`, `templates/research-note.md`). See `CHANGELOG.md`.
+- **0.4.0** — the coherence release: the Product Spec became agent-drafted and
+  founder-ratified, the Idea Brief interview gained altitude-and-resolution
+  discipline, `AGENTS.md` gained an affordance-style context discipline,
+  confirmed founder docs gained a revision workflow, and build tasks gained
+  worker-delegation defaults — plus a full contract audit (19 fixes: state
+  wiring, artifact destinations, DoR/DoD gate wiring, doctor coverage,
+  defaults-not-mandates cleanups). See `CHANGELOG.md`.
 
-## Next: 0.4.0 — "prove it works end to end"
+## Next: 0.5.0 — "prove it works end to end"
 
 Theme: lower the distance between cloning the template and seeing a complete company.
 
@@ -37,7 +44,7 @@ Theme: lower the distance between cloning the template and seeing a complete com
 
 ## Later
 
-- **0.5.0 — richer operating loop and trustworthy evidence:** scaffolding helpers
+- **0.6.0 — richer operating loop and trustworthy evidence:** scaffolding helpers
   for specs/ADRs/tasks, more worked workflows (feedback and experiment loops —
   wiring the already-shipped `templates/experiment.md`), eval-harness stubs, and
   a learning ledger that visibly reduces repeated-failure counts.

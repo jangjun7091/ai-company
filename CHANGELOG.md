@@ -4,6 +4,8 @@ All notable changes to this template are documented here. The format follows [Ke
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-07-19
+
 ### Changed
 
 - The Product Spec is now **agent-drafted then founder-ratified**, not produced by a full interview. `idea-to-release.md` distinguishes the two artifacts: the Idea Brief is *elicited* (its intent lives only in the founder's head), while the Product Spec is *derived* — the agent drafts it from the approved Idea Brief and the founder documents (especially `quality-bar.md`), then the founder ratifies the load-bearing few (acceptance-criteria thresholds, non-goals, human-gate impacts) and the agent asks only where "good" is genuinely underdetermined, never burying a guessed threshold. `AGENTS.md` Feature work and the `product-spec.md` pointer comment updated to match. (#24)
