@@ -10,6 +10,17 @@ This file is the canonical instruction source for every coding agent and LLM env
 4. Summarize the current stage, evidence, unresolved decisions, and the smallest valid next action.
 5. Never infer founder intent when a mandatory human decision is missing.
 
+## Context discipline
+
+Load context the way a careful engineer does: start from the index, follow the pointers to what the current step needs, and fetch more when the task calls for it. This section names *where things are* and sets *defaults*; it is not a fixed read-list. A capable orchestrator stays oriented rather than caged, and a smaller sub-agent still has a floor.
+
+- The state files are the index. `company/state/project-state.yaml` holds the current stage and pointers — `current_mission` (active Idea Brief), `active_spec` (Product Spec), `last_verified_commit`. Open what the pointers name for the step you are in.
+- Load on demand, not by default. Founder documents, workflows, agent contracts, schemas, ADRs, and learning entries are fetched when a step needs them, not read wholesale every session. When a task genuinely needs the full set — a founder-document revision review, for example — read it, and say why.
+- Prefer fetching over guessing. If you are unsure whether a document bears on the decision, open it; missing context is a worse failure than an extra read.
+- When a mandatory decision is missing, escalate rather than read everything to infer it. Use the escalation policy (`company/founder/human-escalation-policy.md`, `templates/human-assistance-request.md`); founder intent is asked for, not guessed.
+
+This section specifies affordances and defaults, not mandates — keep it that way. Future context guidance should add signposts and sensible defaults, not rigid read-lists or blanket prohibitions that constrain a strong model's judgment.
+
 ## Bootstrap mode
 
 When the project stage is `uninitialized` or mandatory founder documents are incomplete:
