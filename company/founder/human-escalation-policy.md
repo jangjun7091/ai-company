@@ -18,4 +18,4 @@ Last reviewed: YYYY-MM-DD
 
 ## Open decisions
 
-<!-- Decisions that must not be silently inferred by an agent. -->
+<!-- Founder-level decisions not yet made, which an agent must not silently infer. Keep implementation or technical details out — route those to docs/decisions/ (status deferred). -->

@@ -41,6 +41,7 @@ Founder documents are the source of truth, not meeting minutes. Capture faithful
 - **Write for an absent reader.** A future agent who was not in the interview must be able to act correctly from the document alone. If a reader would still have to ask "what exactly did they mean?", you have compressed too much.
 - **Persist per section, not at the end.** After each section (typically 3–5 questions), write to the target file, then read the written section back to the founder and ask "what did I lose or flatten?" Revise before moving on. Never hold more than one section's answers only in chat.
 - Keep it structured, not a transcript dump: separate confirmed facts, hypotheses, and open decisions — but keep the specifics inside each.
+- **Keep founder docs at founder altitude.** Implementation or technical details that surface during the interview (mechanisms to design later, thresholds, tooling, per-domain build plans) are not founder truth. Record them as deferred decisions in `docs/decisions/` (status `deferred`); a founder doc's Open decisions is for founder-level questions only.
 
 ## Covering each section
 
