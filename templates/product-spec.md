@@ -1,6 +1,6 @@
 # Product Spec: <name>
 
-<!-- Produced through a bounded founder interview — see company/workflows/idea-to-release.md. -->
+<!-- Drafted by the agent from the Idea Brief and founder documents, then ratified by the founder — see company/workflows/idea-to-release.md. -->
 
 ## User and context
 
