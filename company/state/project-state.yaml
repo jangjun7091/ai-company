@@ -5,8 +5,8 @@ stage: uninitialized # bootstrap-interview advances this to discovery; idea-to-r
 project_name: null # set during the bootstrap interview
 current_mission: null # approved Idea Brief path; first set at bootstrap exit, then by idea-to-release (Decide)
 active_spec: null # idea-to-release: current Product Spec path
-active_decisions: [] # open ADR/decision ids
-blocked_by_human: [] # open human-assistance-request ids
+active_decisions: [] # open ADR ids (see docs/decisions/README.md)
+blocked_by_human: [] # task ids blocked on an open human-assistance request
 last_verified_commit: null # idea-to-release: Verify step
 last_production_release: null # idea-to-release: Release step
 next_review: null # weekly-operating-review: next scheduled review date
