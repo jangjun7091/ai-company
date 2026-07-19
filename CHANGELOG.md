@@ -18,6 +18,7 @@ All notable changes to this template are documented here. The format follows [Ke
 
 ### Fixed
 
+- The operating loop in `idea-to-release.md` is fully wired: Verify names `definition_of_done` in `ai-company.yaml` as the completion bar (previously the manifest's done-gate was invoked by no workflow), Observe routes failures into `incident-to-learning.md`, and Learn hands the next mission back to Discover (`stage: discovery`) — previously the loop dead-ended at `learning`. (#45)
 - Every state field has a named writer: escalations record the blocked task's id in `blocked_by_human` and clear it on resolution (`AGENTS.md`); open ADR ids are tracked in `active_decisions` (`docs/decisions/README.md`); the weekly operating review keeps `active_products` and `portfolio_stage` current. Previously all four fields were written by nothing — `company-state.yaml`'s header even named writers that never wrote it — and `blocked_by_human`'s comment promised "human-assistance-request ids" although escalations only carry a `task_id`. Comments fixed to match. (#43)
 - `doctor.py` requires the templates the workflows build artifacts from — `idea-brief`, `product-spec`, `adr`, `incident`, `research-note` — so deleting one fails the contract check instead of leaving a workflow step silently unexecutable. Locked by a new fixture test. (#41)
 - `templates/adr.md` satisfies its governing schema and uses one id scheme: a `## Question` section (`decision.schema.json` requires `question`) and `Id: ADR-NNN` — previously the title said `ADR-NNN` while the Id line said `DEC-NNN`. (#39)
