@@ -18,6 +18,7 @@ All notable changes to this template are documented here. The format follows [Ke
 
 ### Fixed
 
+- The Definition of Ready is satisfiable where it is checked: the Idea Brief covers the brief-level items, `acceptance_criteria_testable` is satisfied by the derived Product Spec, and the full gate passes before Build. Previously both workflow references told the agent the brief alone satisfies a gate whose criteria item is — post-#24 — a Spec artifact. Gate vocabulary unchanged. (#55)
 - The repository map in `README.md` and `README.ko.md` matches the tree: all five workflows (`founder-doc-revision` was missing) and the full `docs/` set (research and incidents were missing). (#53)
 - The resume protocol in `MAINTAINING.md` no longer hardcodes a milestone that goes stale after every release: the issue-list step takes the current milestone from `ROADMAP.md`'s "Next:" heading (it pointed at the already-released v0.3.0, so a resuming session saw zero planned issues). (#51)
 - `session_start.py`'s operating-mode instruction matches the #18 Context discipline — start from the state-file index and load what the current step needs — instead of the fixed read-list ("Read current specs, decisions, review queues, and evidence") that predates it. (#49)

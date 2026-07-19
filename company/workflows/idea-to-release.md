@@ -47,7 +47,7 @@ Use the interviewer stance from `bootstrap-interview.md` — probe vague answers
 - **Distill, don't transcribe.** Unlike the bootstrap interview (fidelity over brevity), here extract and refine. Keep it bounded: a few focused rounds, one question at a time; stop as soon as the artifact's fields are decision-grade. Respect the founder's time — do not pad.
 - **Hold altitude — the founder owns intent, the agent owns mechanism.** The Idea Brief is what/why, the bet, non-goals, and the riskiest assumption; mechanism and implementation choices (algorithms, internal structure, how a check is met) belong to the Spec and Build phases. If the founder volunteers implementation detail, capture the *intent* behind it and defer the mechanism — park it in `docs/decisions/` (status `deferred`), as in the bootstrap interview — do not deepen the interview to match. Say what resolution you need: a decision-grade answer, often a single line, is complete — so the founder neither over-specifies (which anchors the agent and wastes their time) nor under-specifies (which yields confident-wrong output).
 
-Idea Brief — reach decision-grade answers that satisfy `definition_of_ready` in `ai-company.yaml`:
+Idea Brief — reach decision-grade answers that satisfy `definition_of_ready` in `ai-company.yaml`, except `acceptance_criteria_testable`, which the derived Product Spec satisfies; the full gate passes before Build:
 
 1. What outcome should this mission produce, for whom, and how will you know it worked?
 2. What evidence makes it worth doing now — and what is still only a hypothesis?
