@@ -1,7 +1,9 @@
 # AI Company Starter
 
 [![AI Company Guardrails](https://github.com/jangjun7091/ai-company/actions/workflows/ai-company-guardrails.yml/badge.svg)](https://github.com/jangjun7091/ai-company/actions/workflows/ai-company-guardrails.yml)
+[![Release](https://img.shields.io/github/v/release/jangjun7091/ai-company?sort=semver)](https://github.com/jangjun7091/ai-company/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/jangjun7091/ai-company?style=social)](https://github.com/jangjun7091/ai-company/stargazers)
 
 **[한국어 안내 →](README.ko.md)**
 
@@ -100,6 +102,16 @@ Only the founder's explicit approval justifies marking a document confirmed.
 3. Production telemetry and feedback ingestion.
 4. Incident-to-learning loop.
 5. Multiple agent roles and an orchestration/control-center runtime.
+
+## Roadmap and contributing
+
+Where this is going: [ROADMAP.md](ROADMAP.md). Open work lives in
+[issues](https://github.com/jangjun7091/ai-company/issues) — look for
+[`good first issue`](https://github.com/jangjun7091/ai-company/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
+See [CONTRIBUTING.md](CONTRIBUTING.md) to send a change, and
+[MAINTAINING.md](MAINTAINING.md) for how the template is maintained across sessions.
+
+If the template saves you an afternoon, a ⭐ helps others find it.
 
 ## License
 

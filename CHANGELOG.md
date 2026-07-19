@@ -11,6 +11,7 @@ All notable changes to this template are documented here. The format follows [Ke
 - `templates/evidence.md` and `templates/learning-entry.md`; existing templates name their governing schemas and carry the schema-required fields.
 - Explicit "State updates" wiring from every workflow to `company/state/*.yaml`, and a `lifecycle.portfolio_stages` vocabulary.
 - `LICENSE` (MIT), `CONTRIBUTING.md`, `CHANGELOG.md`, `.gitattributes`, issue-template config, and a CI smoke run of `session_start.py`.
+- `MAINTAINING.md` and `ROADMAP.md`: a session-independent process for maintaining the template across versions, plus release and stars badges.
 
 ### Changed
 
