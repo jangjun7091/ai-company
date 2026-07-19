@@ -25,7 +25,8 @@ BOOTSTRAP_INSTRUCTION = (
     "at a time. Do not implement product code."
 )
 OPERATING_INSTRUCTION = (
-    "Read current specs, decisions, review queues, and evidence. Propose the "
+    "Start from the state-file index and follow its pointers, loading what "
+    "the current step needs (see AGENTS.md, Context discipline). Propose the "
     "smallest valid next action under AGENTS.md."
 )
 
