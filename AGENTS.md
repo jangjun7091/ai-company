@@ -44,7 +44,7 @@ Every material feature must have:
 5. Tests or other machine-checkable evidence.
 6. A rollback or containment plan.
 
-Use `company/workflows/idea-to-release.md`. The Idea Brief is elicited through a bounded founder interview; the Product Spec is then drafted by the agent from it and the founder documents and ratified by the founder. The founder owns intent and the quality bar; neither artifact is finalized without founder confirmation.
+Use `company/workflows/idea-to-release.md`. The Idea Brief is elicited through a bounded founder interview; the Product Spec is then drafted by the agent from it and the founder documents and ratified by the founder. The founder owns intent and the quality bar; neither artifact is finalized without founder confirmation. Missions with a user-facing surface also produce a Design Brief in the Specify layer — see the design pass in `company/workflows/idea-to-release.md`; backend and internal missions skip it.
 
 ## Founder authority
 

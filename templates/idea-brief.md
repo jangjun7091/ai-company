@@ -13,6 +13,9 @@ Owner: Founder
 
 ## Desired outcome
 
+## Experience intent
+<!-- Only for missions with a user-facing surface; skip otherwise. One or two lines: what the experience must make the user feel or accomplish. Put the riskiest design assumption under Key risks and assumptions. Everything else waits for the Design Brief — see the design pass in company/workflows/idea-to-release.md. -->
+
 ## Current alternative
 
 ## Why now

@@ -43,6 +43,7 @@ REQUIRED = [
     "templates/learning-entry.md",
     "templates/idea-brief.md",
     "templates/product-spec.md",
+    "templates/design-brief.md",
     "templates/adr.md",
     "templates/incident.md",
     "templates/research-note.md",
