@@ -58,6 +58,7 @@ class DoctorTests(unittest.TestCase):
         for relative in (
             "templates/idea-brief.md",
             "templates/product-spec.md",
+            "templates/design-brief.md",
             "templates/adr.md",
             "templates/incident.md",
             "templates/research-note.md",

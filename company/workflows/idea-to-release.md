@@ -6,7 +6,7 @@ The canonical operating loop is the eight-step loop in `ai-company.yaml`
 
 1. **Discover** — gather customer evidence and define the problem.
 2. **Decide** — founder approves priority, desired outcome, non-goals, and risk boundary.
-3. **Specify** — produce a Product Spec with testable acceptance criteria.
+3. **Specify** — produce a Product Spec with testable acceptance criteria; missions with a user-facing surface also produce a Design Brief (see "The design pass").
 4. **Plan** — identify architecture impact, alternatives, dependencies, and rollback.
 5. **Task** — split into minimal vertical slices with explicit allowed scope.
 6. **Build** — work on isolated branches or worktrees; preserve traceable artifacts.
@@ -65,6 +65,19 @@ Product Spec — the agent drafts from the Idea Brief and founder documents; the
 The founder need not author these — review and correct the draft, and explicitly confirm 2, 4, and 5. Ask only where the Idea Brief left "good" underdetermined; otherwise derive.
 
 The Idea Brief is recorded from the interview using `templates/idea-brief.md`; the Product Spec is drafted using `templates/product-spec.md` and then ratified. Both live in the mission's folder under `docs/specs/` (see `docs/specs/README.md`) and close with the founder's explicit approval.
+
+## The design pass
+
+Missions with a user-facing surface produce a Design Brief in the Specify layer, alongside the Product Spec, using `templates/design-brief.md`; backend and internal missions skip it. The brief lives in the mission's folder under `docs/specs/` with the other two artifacts. In the Idea Brief interview, capture only a thin hook — the experience intent and the riskiest design assumption; everything else belongs here.
+
+Use the interviewer stance from `bootstrap-interview.md`, with these shifts specific to design:
+
+- **The altitude line moves.** Unlike code, where the founder owns intent and the agent owns mechanism, a designer owns much of the mechanism too: look and feel, layout, visual language. The agent's job shifts to probing the intent *behind* those choices, proposing concrete options to react to, and implementing what is ratified. Record the boundary for this mission in the brief — do not assume it.
+- **"Good" splits in two.** Whatever can be checked without taste — accessibility, responsiveness, flow completeness, alignment with the stated intent — goes into the brief as a verifiable proxy and becomes an acceptance criterion in the Product Spec. Whatever needs human judgment — whether it looks and feels right — is ratified by a person, through iteration on proposals and references; plan for that loop rather than aiming to pass on the first attempt.
+- **Elicit references, not adjectives.** "Clean" and "modern" are unfinished answers. Ask for concrete products, screens, and anti-examples, and why each one — they are what proposals iterate against.
+- **Uniformity is a hypothesis.** Products often put domain variants on a shared shell. Separate what is shared from what is variant-specific, and treat every "this will be the same everywhere" claim as a hypothesis until a second variant confirms it.
+
+This pass is deliberately thin. When the brief's fields are decision-grade, stop; when the right resolution is unclear, ask rather than pad. Execution of the brief belongs to environment adapters (see `.claude/skills/` in Claude Code), which map its sections onto existing design capabilities instead of reinventing them.
 
 ## Executing build tasks
 
