@@ -4,6 +4,10 @@ All notable changes to this template are documented here. The format follows [Ke
 
 ## [Unreleased]
 
+### Added
+
+- `scripts/check.py`: a standard-library, cross-platform runner for the two guardrails. It runs the contract check (`doctor.py`) and the unittest suite — mirroring `make doctor` and `make test` — through the same interpreter and exits non-zero if either fails, so Windows and any machine without GNU Make can verify the repository with one command (`python scripts/check.py`). Wired into the README quickstart (EN/KO) beside the now-optional Makefile note, and covered by `tests/test_check.py`. (#4)
+
 ## [0.4.0] - 2026-07-19
 
 ### Changed
