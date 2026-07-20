@@ -51,7 +51,7 @@ Then open the repository in your preferred coding agent and say:
 
 > Start the company workflow. Follow AGENTS.md and the session-start output. Do not write product code until the bootstrap interview and Definition of Ready are complete.
 
-Requires Python 3.10+ with the standard library only — nothing to install. On Windows, run the `python` commands directly; the `Makefile` is optional and needs GNU Make.
+Requires Python 3.10+ with the standard library only — nothing to install. Run both guardrails at once with `python scripts/check.py` (the contract check and the test suite); it exits non-zero if either fails. The `Makefile` (`make doctor`, `make test`) is an optional convenience that needs GNU Make, which Windows lacks by default.
 
 ## Leaving bootstrap
 
@@ -82,7 +82,7 @@ Only the founder's explicit approval justifies marking a document confirmed.
 - `company/state/` — current lifecycle state, machine-read at session start.
 - `templates/` — reusable artifacts wired to the schemas.
 - `docs/` — specs, decisions, research, incidents, runbooks, and the learning ledger.
-- `scripts/` — deterministic checks (`doctor.py`, `session_start.py`).
+- `scripts/` — deterministic checks (`doctor.py`, `session_start.py`, `check.py`).
 - `adapters/`, `CLAUDE.md`, `.claude/`, `.github/`, `.cursor/` — thin compatibility layers.
 
 ## Supported agents
