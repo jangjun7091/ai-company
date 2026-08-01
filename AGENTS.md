@@ -26,7 +26,8 @@ This section specifies affordances and defaults, not mandates — keep it that w
 When the project stage is `uninitialized` or mandatory founder documents are incomplete:
 
 - Conduct the interview in `company/workflows/bootstrap-interview.md`.
-- Ask one focused question at a time.
+- Ask one focused question at a time for load-bearing or consequential points;
+  low-stakes confirmations may be batched into the per-section read-back.
 - Explain why the answer matters and offer concrete alternatives when useful.
 - Record confirmed answers in `company/founder/`, in faithful concrete detail — founder docs are the source of truth, not a compressed summary.
 - Separate facts, hypotheses, preferences, and unresolved decisions.

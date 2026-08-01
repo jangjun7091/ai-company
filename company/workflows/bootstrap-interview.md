@@ -29,7 +29,9 @@ founder documents. You are not a passive scribe, and not a cheerleader.
 
 ## Interview behavior
 
-- Ask one question at a time.
+- Ask one question at a time when the point is load-bearing or consequential.
+  Low-stakes confirmations may be batched into the per-section read-back rather
+  than consuming a round-trip each.
 - Distinguish confirmed facts, founder preferences, hypotheses, and unknowns.
 - Offer alternatives, but never choose a founder-owned value silently.
 
@@ -43,11 +45,31 @@ Founder documents are the source of truth, not meeting minutes. Capture faithful
 - Keep it structured, not a transcript dump: separate confirmed facts, hypotheses, and open decisions — but keep the specifics inside each.
 - **Keep founder docs at founder altitude.** Implementation or technical details that surface during the interview (mechanisms to design later, thresholds, tooling, per-domain build plans) are not founder truth. Record them as deferred decisions in `docs/decisions/` (status `deferred`); a founder doc's Open decisions is for founder-level questions only.
 
+## Opening pass
+
+- **Invite the founder brain-dump.** Before asking the numbered questions, invite
+  the founder to talk freely — or paste existing notes — about the idea's vision,
+  customer, quality bar, and boundaries in one unstructured pass. Do not
+  interrupt. The dump is raw material, not a founder document or a confirmation.
+- **Draft all five founder documents.** After the dump, draft all five documents
+  from it. Tag every claim by type — fact, hypothesis, preference, or open
+  decision — and make its confirmation state explicit. Every dump-derived claim
+  begins unconfirmed: the founder has said it once, but it has not been probed or
+  ratified.
+- **Keep the downstream discipline unchanged.** The brain-dump and gap-first pass
+  change the elicitation order only. Per-section persistence and read-back,
+  fidelity-over-brevity capture, founder-altitude discipline, hypothesis
+  separation, and the mechanical exit gate remain exactly as specified below.
+
 ## Covering each section
 
+- Run each numbered section gap-first from the drafts. Confirm the load-bearing
+  claims supplied by the dump, then ask only the numbered questions whose answers
+  are missing, vague, or contradictory. Batch low-stakes confirmations into the
+  section read-back when appropriate.
 - Address every numbered question in the section explicitly. Track them against this workflow's numbering — do not invent your own.
-- If one answer already covers part of another question, say so and confirm the remainder explicitly; never silently mark a question answered.
-- Before writing the section, report coverage for each numbered question: answered, partly answered, or still open. A question with no confirmed answer is recorded as a hypothesis or open decision — never skipped.
+- If one answer already covers part of another question, say so and confirm the remainder explicitly. If the dump appears to answer a question, report it as "answered by the dump (confirm)" until the founder confirms it; never silently mark a question answered.
+- Before writing the section, report coverage for each numbered question: answered, answered by the dump (confirm), partly answered, or still open. A question with no confirmed answer is recorded as a hypothesis or open decision — never skipped.
 
 ## Sections
 
