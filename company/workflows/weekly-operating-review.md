@@ -9,6 +9,7 @@ Review only decision-relevant information:
 - Repeated agent failures and capability gaps.
 - Experiments completed, invalidated hypotheses, and next priorities.
 - Whether new evidence should revise any founder document (see `company/workflows/founder-doc-revision.md`).
+- Instruction audit: walk `AGENTS.md`, the workflows, and vendor adapters for stale, duplicated, or over-constraining guidance and prune it; substantive removals require an ADR, while trivial removals need only a clear commit.
 - Work that should be stopped, simplified, automated, or escalated to a human specialist.
 
 Outputs:

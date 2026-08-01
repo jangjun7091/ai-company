@@ -104,3 +104,6 @@ Never perform these actions without explicit human approval:
 - Canonical facts belong in founder docs, specs, ADRs, runbooks, or schemas—not transient chat history.
 - Repeated successful procedures become skills only after review and evaluation.
 - Vendor-specific files must point to this contract instead of duplicating policy.
+- Every rule must trace to a real observed failure or a live decision, never a hypothetical.
+- Remove guidance that no longer changes behavior; prefer fewer, stronger constraints over many weak ones. Operating documents serve model judgment, not cage it.
+- Keep contract edits git-traceable; substantive removals require an ADR, mirroring `company/workflows/founder-doc-revision.md` for operating documents.
