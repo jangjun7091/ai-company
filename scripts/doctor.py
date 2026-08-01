@@ -44,6 +44,7 @@ REQUIRED = [
     "templates/idea-brief.md",
     "templates/product-spec.md",
     "templates/design-brief.md",
+    "templates/progress-journal.md",
     "templates/adr.md",
     "templates/incident.md",
     "templates/research-note.md",

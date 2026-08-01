@@ -79,10 +79,17 @@ Use the interviewer stance from `bootstrap-interview.md`, with these shifts spec
 
 This pass is deliberately thin. When the brief's fields are decision-grade, stop; when the right resolution is unclear, ask rather than pad. Execution of the brief belongs to environment adapters (see `.claude/skills/` in Claude Code), which map its sections onto existing design capabilities instead of reinventing them.
 
+## The Build–Verify autonomy span
+
+Once the Product Spec and, when present, the Design Brief are ratified, Build and Verify proceed without founder interaction by default. Interrupt the founder only when `company/founder/human-escalation-policy.md` triggers or an action reaches a Safety-and-permissions gate in `AGENTS.md`; batch non-blocking questions for the next phase boundary instead of asking them as they arise. The Release gate and every human gate remain unchanged: this autonomy is a span between gates, not a removal of them.
+
+During Build and Verify, append to a Progress Journal created from `templates/progress-journal.md` in the mission's folder under `docs/specs/` at each decision-grade checkpoint: a task completed, a decision made and why, a surprise encountered, or the next action established. Record the few lines a resumed session needs, not a transcript. After compaction or in a new session, reconstruct the build from the state files and the Progress Journal rather than from chat history.
+
 ## Executing build tasks
 
 Build tasks may be delegated to workers — any agent that reads `AGENTS.md`, whether a subagent or an external CLI. One orchestrator owns the plan and the task split; workers execute scoped tasks. Keep delegation safe and verifiable:
 
+- **Protect the orchestrator's context.** Its working context keeps a long mission coherent, so delegate token-heavy, well-specified code and document work to workers by default while retaining the plan, state, and verification in the main session.
 - **One task, tight scope.** The default handoff is a single task file with explicit allowed and forbidden scope, not a whole feature. A headless worker cannot be steered mid-run, so the scope is the control — widen a handoff only deliberately, for a worker you can actually steer.
 - **Isolate the work.** By default each worker runs on its own branch or worktree, so parallel runs cannot collide and every change is reversible. Another isolation mechanism is fine when it preserves both properties.
 - **Least privilege.** Grant the minimum access the task needs — read-only for review or verification, write only for implementation. Do not disable the sandbox except inside a disposable, isolated runner.
