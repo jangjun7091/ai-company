@@ -6,6 +6,8 @@ All notable changes to this template are documented here. The format follows [Ke
 
 ### Changed
 
+- Model capability is now allocated to task risk, judgment load, and observed reliability instead of minimized by a "lowest that passes" rule. The former policy was unevaluable as shipped because the template provides no evals, thresholds, or router, so its precondition never existed and the pruning discipline requires removing inert guidance. It also capped capability by policy even though planning, review, and verification carry judgment load, while long-mission orchestration under the Build–Verify autonomy span and delegation defaults depends on reliable coherence; the old cost heuristic therefore argued against the topology the template assumes. Provider replaceability and model-escalation triggers remain unchanged. (#75)
+
 - The bootstrap interview now opens with an uninterrupted founder brain-dump and drafts all five founder documents from that raw material before interviewing the gaps, extending the draft-then-ratify principle upstream so a founder with the idea already loaded can state it once. Dump-derived claims remain explicitly unconfirmed until probed or ratified; numbered-question coverage gains an "answered by the dump (confirm)" state; and one-question-at-a-time discipline remains for load-bearing decisions while low-stakes confirmations may be batched into the per-section read-back. Per-section persistence and read-back, fidelity-over-brevity capture, founder-altitude discipline, hypothesis separation, and the mechanical exit gate are unchanged. (#68)
 
 ### Added

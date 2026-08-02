@@ -62,7 +62,10 @@ human_approval_required:
   - legal_or_regulatory_commitment
 
 model_policy:
-  principle: use_the_lowest_capability_model_that_reliably_passes_the_relevant_evals
+  principle: match_capability_to_task_risk_judgment_load_and_observed_reliability
+  # Allocate capability rather than minimizing it: planning, review, and
+  # verification carry judgment load. Use measured evidence where it exists
+  # instead of capping capability by policy.
   # Model escalation: when to switch to a stronger model. Distinct from human
   # escalation, whose vocabulary is the trigger enum in
   # company/schemas/escalation.schema.json.
