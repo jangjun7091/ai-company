@@ -77,7 +77,7 @@ Use the interviewer stance from `bootstrap-interview.md`, with these shifts spec
 - **Elicit references, not adjectives.** "Clean" and "modern" are unfinished answers. Ask for concrete products, screens, and anti-examples, and why each one — they are what proposals iterate against.
 - **Uniformity is a hypothesis.** Products often put domain variants on a shared shell. Separate what is shared from what is variant-specific, and treat every "this will be the same everywhere" claim as a hypothesis until a second variant confirms it.
 
-This pass is deliberately thin. When the brief's fields are decision-grade, stop; when the right resolution is unclear, ask rather than pad. Execution of the brief belongs to environment adapters (see `.claude/skills/` in Claude Code), which map its sections onto existing design capabilities instead of reinventing them.
+This pass is deliberately thin. When the brief's fields are decision-grade, stop; when the right resolution is unclear, ask rather than pad. Execution of the brief belongs to environment adapters (see `adapters/README.md`), which map its sections onto existing design capabilities instead of reinventing them.
 
 ## The Build–Verify autonomy span
 

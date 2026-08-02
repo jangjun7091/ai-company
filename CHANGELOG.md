@@ -4,6 +4,10 @@ All notable changes to this template are documented here. The format follows [Ke
 
 ## [Unreleased]
 
+### Fixed
+
+- The design pass in `company/workflows/idea-to-release.md` no longer names a vendor inside the neutral layer: it pointed readers at one environment's product and its hardcoded skills directory for a concept `adapters/README.md` already documents generically, although the change that introduced it (#67) claimed the neutral layer stayed vendor-free. The reference now names `adapters/README.md`, which is where identifying the environments is legitimate. A full scan of `AGENTS.md`, `company/`, `templates/`, and `docs/` for vendor names and vendor-specific paths found no other occurrence, so `MAINTAINING.md` invariant 2 now holds across the operating contract. (#78)
+
 ### Changed
 
 - Model capability is now allocated to task risk, judgment load, and observed reliability instead of minimized by a "lowest that passes" rule. The former policy was unevaluable as shipped because the template provides no evals, thresholds, or router, so its precondition never existed and the pruning discipline requires removing inert guidance. It also capped capability by policy even though planning, review, and verification carry judgment load, while long-mission orchestration under the Build–Verify autonomy span and delegation defaults depends on reliable coherence; the old cost heuristic therefore argued against the topology the template assumes. Provider replaceability and model-escalation triggers remain unchanged. (#75)
