@@ -24,7 +24,7 @@ collaboration:
   independent_opinion_before_debate: true
 model_policy:
   provider: replaceable
-  selection: lowest_capability_model_that_passes_role_evals
+  selection: match_capability_to_task_risk_and_judgment_load
 # Values must match the trigger enum in company/schemas/escalation.schema.json.
 mandatory_escalation:
 - missing_input
