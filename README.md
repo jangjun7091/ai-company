@@ -103,9 +103,11 @@ Only the founder's explicit approval justifies marking a document confirmed.
 4. Incident-to-learning loop.
 5. Multiple agent roles and an orchestration/control-center runtime.
 
-## Roadmap and contributing
+## What's next and contributing
 
-Where this is going: [ROADMAP.md](ROADMAP.md). Open work lives in
+Where this is going: the open
+[milestone](https://github.com/jangjun7091/ai-company/milestones). Shipped work is
+in [CHANGELOG.md](CHANGELOG.md). Open work lives in
 [issues](https://github.com/jangjun7091/ai-company/issues) — look for
 [`good first issue`](https://github.com/jangjun7091/ai-company/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
 See [CONTRIBUTING.md](CONTRIBUTING.md) to send a change, and

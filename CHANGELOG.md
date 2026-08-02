@@ -4,6 +4,10 @@ All notable changes to this template are documented here. The format follows [Ke
 
 ## [Unreleased]
 
+### Removed
+
+- `ROADMAP.md`, and with it the obligation to keep a plan in a file. It was edited four times since creation, three of them release commits, and never once between releases — while the real work arrived irregularly from dogfooding, none of it from a roadmap theme. The document was therefore reliably stale: its "Next" milestone still listed a Windows check script that shipped in #65, and none of the merged `[Unreleased]` work appeared anywhere in it, so a session following the resume protocol was told the wrong direction. It also inverted its own purpose, since a roadmap advertising already-shipped items signals abandonment rather than momentum. GitHub milestones and issues were the planning surface actually in use; the file was a stale cache of them. The resume protocol in `MAINTAINING.md` now reads the milestone list and the `[Unreleased]` changelog section directly, the release checklist closes and opens milestones instead of editing a roadmap, and both READMEs point at the open milestone. The one record that lived only in the roadmap — that `templates/experiment.md` ships deliberately unwired pending the experiment loops — moved into a pointer comment in that template, where a reader who might "fix" it will actually see it. Applies the instruction-pruning discipline (#70) to the maintainer docs. (#80)
+
 ### Fixed
 
 - The design pass in `company/workflows/idea-to-release.md` no longer names a vendor inside the neutral layer: it pointed readers at one environment's product and its hardcoded skills directory for a concept `adapters/README.md` already documents generically, although the change that introduced it (#67) claimed the neutral layer stayed vendor-free. The reference now names `adapters/README.md`, which is where identifying the environments is legitimate. A full scan of `AGENTS.md`, `company/`, `templates/`, and `docs/` for vendor names and vendor-specific paths found no other occurrence, so `MAINTAINING.md` invariant 2 now holds across the operating contract. (#78)
