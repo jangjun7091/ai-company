@@ -103,9 +103,11 @@ Python 3.10+ 표준 라이브러리만 사용합니다 — 설치할 의존성�
 4. incident-to-learning 루프 가동.
 5. 다중 에이전트 역할과 오케스트레이션/컨트롤 센터 런타임 도입.
 
-## 로드맵과 기여
+## 다음 계획과 기여
 
-방향은 [ROADMAP.md](ROADMAP.md)에 있습니다. 진행 중인 작업은
+방향은 열려 있는
+[마일스톤](https://github.com/jangjun7091/ai-company/milestones)에서 볼 수 있고,
+출시된 내용은 [CHANGELOG.md](CHANGELOG.md)에 있습니다. 진행 중인 작업은
 [issues](https://github.com/jangjun7091/ai-company/issues)에 있으며,
 [`good first issue`](https://github.com/jangjun7091/ai-company/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 라벨부터 시작하면 좋습니다. 변경을 보내는 방법은 [CONTRIBUTING.md](CONTRIBUTING.md),
