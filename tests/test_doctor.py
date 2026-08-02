@@ -60,6 +60,7 @@ class DoctorTests(unittest.TestCase):
             "templates/product-spec.md",
             "templates/design-brief.md",
             "templates/progress-journal.md",
+            "templates/worker-handoff.md",
             "templates/adr.md",
             "templates/incident.md",
             "templates/research-note.md",
